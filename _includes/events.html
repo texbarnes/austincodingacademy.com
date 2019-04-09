@@ -1,0 +1,55 @@
+<div class="row d-flex flex-wrap justify-content-around justify-content-sm-center">
+  {% for event in site.data.events limit:3 %}
+    <div class="col-12 col-md card card-frame shadow-dark text-center m-2 mw-22">
+      <!-- Card -->
+      <div class="card-body pt-6 pb-3">
+        <div class="mx-auto mb-4">
+          <amp-img
+            width="{{ event.width | default: 400 }}"
+            height="{{ event.height | default: 200 }}"
+            layout="responsive"
+            class="img-fluid rounded shadow-dark"
+            src="{{event.img}}"
+            alt="{{event.name}}"
+          ></amp-img>
+        </div>
+        <div class="mb-4">
+          {% assign name = event.name | split: " | "  %}
+          <h5 class="mb-1 text-default">{{ name[1] }}</h5>
+          <h6 class="mb-1 text-default">{{event.venue_name}}</h6>
+          <p>{{event.start_date}} | {{event.start_time}}</p>
+        </div>
+        <a class="btn btn-round bg-purple text-white"
+          href="{{event.url}}"
+          rel="noopener"
+          target="_blank"
+          role="button"
+        >View Details <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <!-- End Card -->
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "{{event.name | strip_newlines | escape}}",
+        "startDate": "{{event.start_date_time}}",
+        "endDate": "{{event.end_date_time}}",
+        "location": {
+          "@type": "Place",
+          "name": "{{event.venue_name | strip_newlines | escape}}",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{event.venue_address}}",
+            "addressLocality": "{{event.venue_city}}",
+            "postalCode": "{{event.venue_zip}}",
+            "addressRegion": "{{event.venue_state}}",
+            "addressCountry": "{{event.venue_country}}"
+          }
+        },
+        "image": ["{{event.img}}"],
+        "description": "{{event.description | strip_newlines | escape}}"
+      }
+    </script>
+  {% endfor %}
+</div>

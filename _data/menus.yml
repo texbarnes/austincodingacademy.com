@@ -1,50 +1,36 @@
 ---
 social:
 - weight: 3
-  title: twitter
-  url: https://twitter.com/AustinCoding/
-- weight: 2
   title: instagram
   url: https://www.instagram.com/austincodingacademy/
-  margin: mx-5
+- weight: 2
+  title: twitter
+  url: https://twitter.com/AustinCoding/
+  class: mx-3
 - weight: 1
   title: facebook-square
   url: https://www.facebook.com/AustinCodingAcademy/
-footer-community:
+
+footer:
+- weight: 1
+  title: Campus Manager
+  url: https://campus.austincodingacademy.com
+- weight: 2
+  title: Hack Overflow
+  url: https://austincodingacademy.com/forum
+- weight: 3
+  title: Upcoming Events
+  url: https://www.eventbrite.com/o/austin-coding-academy-10937668459
 - weight: 5
   title: Become an Instructor
   url: "/instructor-apply"
 - weight: 4
-  title: Contact Us
-  url: "/contact"
-- weight: 3
-  title: FAQ
-  url: "/faq"
-- weight: 2
-  title: Upcoming Events
-  url: https://www.eventbrite.com/o/austin-coding-academy-10937668459
-- weight: 1
-  title: Campus Manager
-  url: https://campus.austincodingacademy.com
-footer-about:
-- url: "/blog"
-  weight: 6
   title: Blog
-- weight: 5
-  title: Apply Now
-  url: "/apply"
-- weight: 4
+  url: "/blog"
+- weight: 6
   title: Student Grievance Policy
   url: "/student-grievances"
-- weight: 3
-  title: Financing
-  url: "/financing"
-- weight: 2
-  title: C# .NET
-  url: "/csharp"
-- weight: 1
-  title: JavaScript
-  url: "/javascript"
+
 courses:
 - weight: 2
   title: C# .NET
@@ -52,21 +38,34 @@ courses:
 - weight: 1
   title: JavaScript
   url: "/javascript"
-header:
-- url: "/faq"
-  weight: 2
+
+about:
+- weight: 1
   title: FAQ
-- weight: 5
-  title: Apply
-  url: "/apply"
-  button: btn btn-round text-white font-weight-bold primary-gradient py-1 px-6 mx-3
+  url: "/faq"
+- weight: 2
+  title: Instructors
+  url: "/instructors"
+- weight: 3
+  title: Our Team
+  url: "/team"
 - weight: 4
-  title: Financing
-  url: "/financing"
+  title: Contact Us
+  url: "/contact"
+
+header:
 - weight: 1
   title: Courses &amp; Tuition
   url: "#"
   identifier: courses
+- weight: 2
+  title: About Us
+  url: "#"
+  identifier: about
 - weight: 3
-  title: Contact
-  url: "/contact"
+  title: Financing
+  url: "/financing"
+- weight: 10
+  title: Apply
+  url: "/apply"
+  button: btn btn-round text-white cta-gradient py-1 px-6

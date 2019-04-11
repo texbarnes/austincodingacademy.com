@@ -193,7 +193,7 @@
 
 <amp-sidebar
   on="tap:sidebar.open"
-  tabindex="1"
+  tabindex="-1"
   role="navigation"
   id="sidebar"
   class="m-0 bg-dark d-flex d-md-none row flex-column align-items-start justify-content-start"
@@ -204,7 +204,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <div class="mx-5 text-white">
           Courses &amp; Tuition
@@ -238,7 +239,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <div class="mx-5 text-white">
           About Us
@@ -290,7 +292,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <!-- htmllint preset="none" -->
         
@@ -307,7 +310,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <!-- htmllint preset="none" -->
         
@@ -364,8 +368,9 @@
         <button
           class="display-5 text-white btn btn-link d-flex justify-content-end d-md-none"
           on="tap:sidebar.open"
-          tabindex="2"
-          role="button">
+          tabindex="0"
+          role="button"
+        >
           <i class="fas fa-bars"></i>
         </button>
         <!-- End Responsive Toggle Button -->
@@ -506,6 +511,7 @@
                 selectedName:'Dinh Huynh',
                 selectedTitle:'JS 211 (North Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">
@@ -532,6 +538,7 @@
                 selectedName:'Keith Kritselis',
                 selectedTitle:'Web 101 (Central Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">
@@ -558,6 +565,7 @@
                 selectedName:'Emily Anne Moses',
                 selectedTitle:'JS 211 (Central Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">
@@ -584,6 +592,7 @@
                 selectedName:'Juan Rodriguez',
                 selectedTitle:'Web 101 (North Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">
@@ -610,6 +619,7 @@
                 selectedName:'Yousif Seedhom',
                 selectedTitle:'C# 221 (North Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">
@@ -636,6 +646,7 @@
                 selectedName:'Matt Viteri',
                 selectedTitle:'JS 311 (North Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">
@@ -662,6 +673,7 @@
                 selectedName:'Jon Woo',
                 selectedTitle:'JS 311 (Central Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">
@@ -688,6 +700,7 @@
                 selectedName:'Erik Zambrano',
                 selectedTitle:'.NET 321 (North Campus)'
               }),bio-section.scrollTo(duration=200)"
+              tabindex="0"
             ></amp-img>
             <!-- htmllint preset="$previous" -->
               <p class="p-1 text-center">

@@ -205,7 +205,7 @@
 
 <amp-sidebar
   on="tap:sidebar.open"
-  tabindex="1"
+  tabindex="-1"
   role="navigation"
   id="sidebar"
   class="m-0 bg-dark d-flex d-md-none row flex-column align-items-start justify-content-start"
@@ -216,7 +216,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <div class="mx-5 text-white">
           Courses &amp; Tuition
@@ -250,7 +251,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <div class="mx-5 text-white">
           About Us
@@ -302,7 +304,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <!-- htmllint preset="none" -->
         
@@ -319,7 +322,8 @@
       class="mt-5 text-left"
       on="tap:sidebar.open"
       role="dialog"
-      tabindex="20">
+      tabindex="-1"
+    >
       
         <!-- htmllint preset="none" -->
         
@@ -376,8 +380,9 @@
         <button
           class="display-5 text-white btn btn-link d-flex justify-content-end d-md-none"
           on="tap:sidebar.open"
-          tabindex="2"
-          role="button">
+          tabindex="0"
+          role="button"
+        >
           <i class="fas fa-bars"></i>
         </button>
         <!-- End Responsive Toggle Button -->
@@ -512,7 +517,8 @@
           class="btn btn-outline-light btn-round mr-2 px-2 d-sm-none"
           on="tap:call-us"
           role="button"
-          tabindex="1">
+          tabindex="0"
+        >
           Get More Info
         </button>
         <amp-lightbox
@@ -521,26 +527,25 @@
           layout="nodisplay"
           scrollable
           on="tap:call-us.close"
+          tabindex="0"
           role="dialog"
-          tabindex="20">
+        >
           <div class="mt-11 pt-5 d-flex mx-auto flex-column align-items-center">
             <!-- htmllint preset="none" -->
-            <a
-              class="my-5 btn btn-light btn-round mr-2 d-sm-none"
+            <a class="my-5 btn btn-light btn-round mr-2 d-sm-none"
               href="https://app.acuityscheduling.com/schedule.php?owner=11951420&appointmentType=1406673"
               target="_blank"
               rel="noopener"
-              tabindex="1">
+            >
               Schedule a Q&amp;A
             </a>
             <!-- htmllint preset="$previous" -->
             <h4 class="text-white display-7 border-top border-bottom">
               OR
             </h4>
-            <a
-              class="my-5 btn btn-light btn-round mr-2 d-sm-none"
+            <a class="my-5 btn btn-light btn-round mr-2 d-sm-none"
               href="tel:5128278498"
-              tabindex="2">
+            >
               Call Us Now!
             </a>
           </div>
@@ -568,7 +573,9 @@
   <amp-position-observer
   on="scroll:fill-header-background.seekTo(percent=event.percent)"
   intersection-ratios="0"
-  layout="nodisplay">
+  layout="nodisplay"
+  tabindex="-1"
+>
 </amp-position-observer>
 
 <amp-animation id="fill-header-background" layout="nodisplay">
@@ -650,7 +657,7 @@ but priority should be ensuring that the opacity animation begins immediately on
     How did you hear about us? <span class="text-red">*</span>
   </label>
 
-  <select id="referral" name="how_did_you_hear_about_us" class="form-control" tabindex="6">
+  <select id="referral" name="how_did_you_hear_about_us" class="form-control">
 
     <option value="" disabled selected>
       Select your answer
@@ -1184,8 +1191,9 @@ but priority should be ensuring that the opacity animation begins immediately on
   <div
     class="form-container"
     on="tap:contact-lightbox.open"
+    tabindex="-1"
     role="form"
-    tabindex="19">
+  >
     <input name="lifecyclestage" type="hidden" value="lead">
     <input name="hs_lead_status" type="hidden" value="NEW">
     <input name="page_name" type="hidden" value="Austin Coding Academy | Learn to Code, Change Your Life">
@@ -1210,7 +1218,6 @@ but priority should be ensuring that the opacity animation begins immediately on
             data-msg="Please enter your first name."
             data-error-class="u-has-error"
             data-success-class="u-has-success"
-            tabindex="1"
           />
         </div>
       </div>
@@ -1234,7 +1241,6 @@ but priority should be ensuring that the opacity animation begins immediately on
             data-msg="Please enter your last name."
             data-error-class="u-has-error"
             data-success-class="u-has-success"
-            tabindex="2"
           />
         </div>
       </div>
@@ -1258,7 +1264,6 @@ but priority should be ensuring that the opacity animation begins immediately on
             data-msg="Please enter a valid email address."
             data-error-class="u-has-error"
             data-success-class="u-has-success"
-            tabindex="3"
           />
         </div>
       </div>
@@ -1282,7 +1287,6 @@ but priority should be ensuring that the opacity animation begins immediately on
             data-msg="Please enter your phone number."
             data-error-class="u-has-error"
             data-success-class="u-has-success"
-            tabindex="4"
           />
         </div>
       </div>
@@ -1306,7 +1310,6 @@ but priority should be ensuring that the opacity animation begins immediately on
             data-msg="Please enter a message."
             data-error-class="u-has-error"
             data-success-class="u-has-success"
-            tabindex="5"
           ></textarea>
         </div>
       </div>
@@ -1318,7 +1321,7 @@ but priority should be ensuring that the opacity animation begins immediately on
     How did you hear about us? <span class="text-red">*</span>
   </label>
 
-  <select id="referral" name="how_did_you_hear_about_us" class="form-control" tabindex="6">
+  <select id="referral" name="how_did_you_hear_about_us" class="form-control">
 
     <option value="" disabled selected>
       Select your answer
@@ -1380,7 +1383,6 @@ but priority should be ensuring that the opacity animation begins immediately on
         <button
           type="submit"
           class="text-white btn btn-round bg-purple hover-white"
-          tabindex="18"
         >
           Send
         </button>

@@ -147,7 +147,7 @@ title: {{ page.fullname }}
                 </ul>
                 <!-- End List Group -->
               </div>
-
+              {% if page.workplace %}
               <div class="col-md-6 col-lg-4">
                 <!-- List Group -->
                 <ul class="list-group list-group-transparent list-group-flush list-group-borderless mb-0">
@@ -168,6 +168,7 @@ title: {{ page.fullname }}
                 </ul>
                 <!-- End List Group -->
               </div>
+              {% endif %}
             </div>
             <!-- End Icon Blocks -->
 
@@ -241,20 +242,22 @@ title: {{ page.fullname }}
                 <!-- End Title -->
 
                 {% for project in page.projects %}
-                <!-- Info -->
-                <div class="media mb-5">
-                  <div class="media-body">
-                    <h5 class="mb-0 link-underlined">
-                      <a href="{{ project.url }}">
-                        {{ project.name }}
-                      </a>
-                    </h5>
-                    <p class="mb-0">
-                      {{project.desc}}
-                    </p>
-                  </div>
-                </div>
-                <!-- End Info -->
+                  {% if project.url %}
+                    <!-- Info -->
+                    <div class="media mb-5">
+                      <div class="media-body">
+                        <h5 class="mb-0 link-underlined">
+                          <a href="{{ project.url }}">
+                            {{ project.name }}
+                          </a>
+                        </h5>
+                        <p class="mb-0">
+                          {{project.desc}}
+                        </p>
+                      </div>
+                    </div>
+                    <!-- End Info -->
+                  {% endif %}
                 {% endfor %}
               </div>
               <div class="col-md-4 mb-5 mb-md-0">

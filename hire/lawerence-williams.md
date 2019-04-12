@@ -1,13 +1,13 @@
 ---
 layout: resume #don't touch
-categories: [ hire ] # don't touch
+categories: [ ] # don't touch
 
 fullname: Lawerence Williams
 jobtitle: Full Stack Web Developer
 
 location: Austin, TX
-blurb: 'A detail-oriented and enthusiastic full stack web developer with extensive experience in event planning, social media, digital and television marketing as well as computer programming.
-Seeking to begin a career with an entry-level position with a respectable company as soon as possible.'
+blurb: "A detail-oriented and enthusiastic full stack web developer with extensive experience in event planning, social media, digital and television marketing as well as computer programming.
+Seeking to begin a career with an entry-level position with a respectable company as soon as possible."
 
 skills:
   - JavaScript

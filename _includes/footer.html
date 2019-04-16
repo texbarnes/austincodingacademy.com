@@ -33,7 +33,9 @@
               {% for item in site.menus.social %}
                 <!-- htmllint preset="none" -->
                 <a href="{{ item.url }}" class="{{ item.class }}">
-                  <h4 class="text-white hover-white fab fa-{{ item.title }}"></h4>
+                  <span class="text-white hover-white display-7 fab fa-{{ item.title }}">
+                    <span class="sr-only">{{ item.title }}</span>
+                  </span>
                 </a>
                 <!-- htmllint preset="$previous" -->
               {% endfor %}

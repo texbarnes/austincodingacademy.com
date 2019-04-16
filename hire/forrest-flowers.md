@@ -1,6 +1,6 @@
 ---
 layout: resume #don't touch
-categories: [ hire ] # don't touch
+categories: [ hire, graduation ] # don't touch
 
 fullname: Forrest Flowers
 jobtitle: Freelance Web Developer
@@ -26,7 +26,7 @@ linkedin: https://www.linkedin.com/in/forrestflowers
 
 email: forrest.w.flowers@gmail.com
 website:
-workplace: N/A
+workplace:
 phone: (512) 940-6405
 
 workexperience:

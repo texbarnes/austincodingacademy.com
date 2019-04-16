@@ -1,7 +1,7 @@
 ---
 tags: []
 layout: post
-title: 7 Characteristics of a Successful Web Developer
+title: "(old) 7 Characteristics of a Successful Web Developer"
 description: Great code doesn't always make a great web developer. Here are some non-technical
   characteristics we see in strong developers and software engineers.
 created_at: 2018-04-16 05:00:00 +0000

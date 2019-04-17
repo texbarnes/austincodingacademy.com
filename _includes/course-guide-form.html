@@ -15,11 +15,11 @@
       <!-- Input -->
       <div class="col-sm-6">
         <div class="form-group">
-          <label for="first-name" class="form-label">
-            Name <span class="text-red">*</span>
+          <label for="first-name-cg" class="form-label">
+            Name <span class="text-red-a">*</span>
           </label>
 
-          <input id="first-name"
+          <input id="first-name-cg"
             type="text"
             class="form-control"
             name="firstname"
@@ -34,11 +34,11 @@
       <!-- Input -->
       <div class="col-sm-6">
         <div class="form-group">
-          <label for="email" class="form-label">
-            Email <span class="text-red">*</span>
+          <label for="email-cg" class="form-label">
+            Email <span class="text-red-a">*</span>
           </label>
 
-          <input id="email"
+          <input id="email-cg"
             type="email"
             class="form-control"
             name="email"
@@ -50,13 +50,13 @@
       </div>
       <!-- End Input -->
       <div class="col-sm-6 d-flex flex-column justify-content-end">
-        {% include referral-question.html %}
+        {% include referral-question.html id="referral-cg" %}
       </div>
 
       <!-- Input -->
       <div class="col-sm-6 d-flex flex-column justify-content-end form-group">
-        <label class="form-label" for="best-describes">Which of these best describes you? <span class="text-red">*</span></label>
-        <select id="best-describes" name="which_of_these_best_describes_you_" class="form-control" required>
+        <label class="form-label" for="best-describes-cg">Which of these best describes you? <span class="text-red-a">*</span></label>
+        <select id="best-describes-cg" name="which_of_these_best_describes_you_" class="form-control" required>
           <option disabled selected value="">Select your answer</option>
           <option value="I'm researching coding bootcamps">I'm researching coding bootcamps</option>
           <option value="I'm teaching myself to code but I'm stuck">I'm teaching myself to code but I'm stuck</option>
@@ -84,7 +84,7 @@
   <div class="text-center">
     <div submit-error>
       <template type="amp-mustache">
-        <p class="text-red">There was an error with your request. Please try again.</p>
+        <p class="text-red-a">There was an error with your request. Please try again.</p>
       </template>
     </div>
   </div>

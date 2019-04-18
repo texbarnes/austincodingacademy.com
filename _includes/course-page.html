@@ -2,7 +2,7 @@
 <div id="hero-{{ page.hero }}" class="hero py-5 py-md-11">
 <!-- htmllint preset="$previous" -->
   <h1 class="mt-10 mb-5 mb-md-10 text-white font-family-alt font-weight-bold display-4 text-center">
-      {{ page.track }} Track
+    {{ page.track }} Track
   </h1>
   <p class="text-white text-center mx-auto px-2 mw-600">
     {{ page.hero_text }}
@@ -13,19 +13,94 @@
 
   {% include observer-and-header-animation.html %}
 
-  <section class="py-5 container">
+  <nav class="fixed-bottom mb-2" style="left: 0; width: 8rem;">
+    <ul class="list-unstyled text-default bg-light rounded-right p-1">
+      <li id="header-curriculum" class="sidenav-item pb-3 bg-light position-relative">
+        <h5 on="tap:curriculum.scrollTo(duration=300)" class="px-2 m-0">
+          curriculum
+        </h5>
+        <h5 on="tap:curriculum.scrollTo(duration=300)"
+          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
+          id="curriculum-selected"
+        >
+          curriculum
+        </h5>
+      </li>
+      <li id="header-form" class="sidenav-item pb-3 bg-light position-relative">
+        <h5 on="tap:form.scrollTo(duration=300)" class="px-2 m-0">
+          form
+        </h5>
+        <h5 on="tap:form.scrollTo(duration=300)"
+          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
+          id="form-selected"
+        >
+          form
+        </h5>
+      </li>
+      <li id="header-comparison" class="sidenav-item pb-3 bg-light position-relative">
+        <h5 on="tap:comparison.scrollTo(duration=300)" class="px-2 m-0">
+          comparison
+        </h5>
+        <h5 on="tap:comparison.scrollTo(duration=300)"
+          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
+          id="comparison-selected"
+        >
+          comparison
+        </a>
+      </li>
+      <li id="header-dates" class="sidenav-item pb-3 bg-light position-relative">
+        <h5 on="tap:dates.scrollTo(duration=300)" class="px-2 m-0">
+          dates
+        </h5>
+        <h5 on="tap:dates.scrollTo(duration=300)"
+          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
+          id="dates-selected"
+        >
+          dates
+        </h5>
+      </li>
+      <li id="header-campuses" class="sidenav-item pb-3 bg-light position-relative">
+        <h5 on="tap:campuses.scrollTo(duration=300)" class="px-2 m-0">
+          campuses
+        </h5>
+        <h5 on="tap:campuses.scrollTo(duration=300)"
+          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
+          id="campuses-selected"
+        >
+          campuses
+        </h5>
+      </li>
+      <li id="header-contact" class="sidenav-item pb-3 bg-light position-relative">
+        <h5 on="tap:contact.scrollTo(duration=300)" class="px-2 m-0">
+          contact
+        </h5>
+        <h5 on="tap:contact.scrollTo(duration=300)"
+          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
+          id="contact-selected"
+        >
+          contact
+        </h5>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="curriculum" class="pt-11 container">
+    {% include scrolling-menu-animation.html id="curriculum" %}
     {% include curriculum.html %}
   </section>
 
-  <section class="mb-6">
+  <section id="form" class="py-11 mb-6">
+    {% include scrolling-menu-animation.html id="form" %}
+    <div class="pt-3"></div>
     {% include course-guide-form.html %}
   </section>
 
   <!-- htmllint preset="none" -->
-  <section class="{{page.hero}}-gradient text-white my-5">
+  <section id="comparison" class="{{page.hero}}-gradient text-white my-5">
   <!-- htmllint preset="$previous" -->
+    {% include scrolling-menu-animation.html id="comparison" %}
     <div class="container py-11">
-      <h2 class="font-family-alt font-weight-bold text-center display-5 mb-5">
+      <h2 class="font-family-alt font-weight-bold text-center display-5 mt-3 mb-5">
         Take Our Full Track and Save
       </h2>
       {% include comparison-cards.html %}
@@ -33,20 +108,23 @@
     </div>
   </section>
 
-  <section class="mb-6 py-5">
-    <div class="container px-2 p-md-0">
+  <section id="dates" class="py-11 mb-6">
+    {% include scrolling-menu-animation.html id="dates" %}
+    <div class="container px-2 p-md-0 mt-3 mw-1000">
       {% include course-dates.html %}
     </div>
   </section>
 
   <!-- htmllint preset="none" -->
-  <section class="{{page.hero}}-gradient text-white my-5">
+  <section id="campuses" class="{{page.hero}}-gradient text-white my-5">
   <!-- htmllint preset="$previous" -->
+    {% include scrolling-menu-animation.html id="campuses" %}
     {% include campus-locations.html %}
   </section>
 
-  <section class="py-5">
-    <div class="d-flex flex-column justify-content-center align-items-center mx-auto">
+  <section id="contact" class="py-11">
+    {% include scrolling-menu-animation.html id="contact" %}
+    <div class="d-flex flex-column justify-content-center align-items-center mx-auto mt-3">
       <h2 class="font-family-alt font-weight-bold text-center display-5">
         Still Have Questions?
       </h2>

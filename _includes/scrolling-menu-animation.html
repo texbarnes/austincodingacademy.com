@@ -6,11 +6,13 @@
 >
 </amp-position-observer>
 
+<!-- htmllint preset="none" -->
 <amp-animation id="select-{{include.id}}" layout="nodisplay">
+<!-- htmllint preset="$previous" -->
   <script type="application/json">
     {
       "--opacity": "1",
-      "selector": ".border-primary",
+      "selector": ".sidenav-selected",
       "duration": "0.25s",
       "keyframes": {"opacity": "var(--opacity)"},
       "fill": "forwards",

@@ -179,3 +179,17 @@ tutors:
   calendar: https://acaappointment.as.me/?calendarID=2522414
   virtual: https://meet.google.com/enj-jjez-zcw
   rocketchat: https://chat.austincodingacademy.com/direct/ericbarrs-913
+
+scrolling:
+  - name: curriculum
+    weight: 1
+  - name: form
+    weight: 2
+  - name: comparison
+    weight: 3
+  - name: dates
+    weight: 4
+  - name: campuses
+    weight: 5
+  - name: contact
+    weight: 6

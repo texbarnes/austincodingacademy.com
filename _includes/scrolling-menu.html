@@ -1,0 +1,19 @@
+<nav class="fixed-bottom mb-5" style="left: 4rem; width: 8rem;">
+  <!-- htmllint preset="none" -->
+  <ul class="list-unstyled text-white bg-{{page.trackColor}} rounded p-1">
+    {% for item in site.menus.scrolling %}
+      <li id="header-{{item.name}}" class="sidenav-item pb-3 position-relative">
+        <h5 on="tap:{{item.name}}.scrollTo(duration=300)" class="px-2 m-0">
+          {{item.name}}
+        </h5>
+        <h5 on="tap:{{item.name}}.scrollTo(duration=300)"
+          id="{{item.name}}-selected"
+          class="border-top border-bottom border-white w-100 position-absolute sidenav-selected px-2 m-0"
+        >
+          {{item.name}}
+        </h5>
+      </li>
+    {% endfor %}
+  </ul>
+  <!-- htmllint preset="$previous" -->
+</nav>

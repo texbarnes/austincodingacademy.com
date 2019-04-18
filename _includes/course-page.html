@@ -13,76 +13,7 @@
 
   {% include observer-and-header-animation.html %}
 
-  <nav class="fixed-bottom mb-2" style="left: 0; width: 8rem;">
-    <ul class="list-unstyled text-default bg-light rounded-right p-1">
-      <li id="header-curriculum" class="sidenav-item pb-3 bg-light position-relative">
-        <h5 on="tap:curriculum.scrollTo(duration=300)" class="px-2 m-0">
-          curriculum
-        </h5>
-        <h5 on="tap:curriculum.scrollTo(duration=300)"
-          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
-          id="curriculum-selected"
-        >
-          curriculum
-        </h5>
-      </li>
-      <li id="header-form" class="sidenav-item pb-3 bg-light position-relative">
-        <h5 on="tap:form.scrollTo(duration=300)" class="px-2 m-0">
-          form
-        </h5>
-        <h5 on="tap:form.scrollTo(duration=300)"
-          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
-          id="form-selected"
-        >
-          form
-        </h5>
-      </li>
-      <li id="header-comparison" class="sidenav-item pb-3 bg-light position-relative">
-        <h5 on="tap:comparison.scrollTo(duration=300)" class="px-2 m-0">
-          comparison
-        </h5>
-        <h5 on="tap:comparison.scrollTo(duration=300)"
-          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
-          id="comparison-selected"
-        >
-          comparison
-        </a>
-      </li>
-      <li id="header-dates" class="sidenav-item pb-3 bg-light position-relative">
-        <h5 on="tap:dates.scrollTo(duration=300)" class="px-2 m-0">
-          dates
-        </h5>
-        <h5 on="tap:dates.scrollTo(duration=300)"
-          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
-          id="dates-selected"
-        >
-          dates
-        </h5>
-      </li>
-      <li id="header-campuses" class="sidenav-item pb-3 bg-light position-relative">
-        <h5 on="tap:campuses.scrollTo(duration=300)" class="px-2 m-0">
-          campuses
-        </h5>
-        <h5 on="tap:campuses.scrollTo(duration=300)"
-          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
-          id="campuses-selected"
-        >
-          campuses
-        </h5>
-      </li>
-      <li id="header-contact" class="sidenav-item pb-3 bg-light position-relative">
-        <h5 on="tap:contact.scrollTo(duration=300)" class="px-2 m-0">
-          contact
-        </h5>
-        <h5 on="tap:contact.scrollTo(duration=300)"
-          class="border-top border-bottom border-primary w-100 position-absolute sidenav-selected px-2 m-0"
-          id="contact-selected"
-        >
-          contact
-        </h5>
-      </li>
-    </ul>
-  </nav>
+  {% include scrolling-menu.html %}
 
   <section id="curriculum" class="pt-11 container">
     {% include scrolling-menu-animation.html id="curriculum" %}

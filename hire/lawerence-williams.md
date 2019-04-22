@@ -34,11 +34,12 @@ phone: (512) 539-9572
 
 workexperience:
   - company: Personal Care Counseling Center
+    logo: https://media.licdn.com/dms/image/C510BAQEUfbXLPe7V8Q/company-logo_200_200/0?e=2159024400&v=beta&t=0HX39QiGoWtXrHsmVfM2nUPgyKnGin7zK9j3E0a7BRs
     dates: March 2012 - July 2018
     title: Administrative Assistant
     location: Austin, TX
-    
   - company: Roots And Culture
+    logo: https://dudodiprj2sv7.cloudfront.net/vendor-logos/46/UH/OTQJVNSSIAHO.JPEG
     dates: April 2010 - Current
     title: C.E.O. President
     location: Austin, TX
@@ -59,5 +60,4 @@ projects:
   - name: Redux Action Practice
     desc: Fully functional app
     url: https://github.com/AustinCodingAcademy/redux-action-practice/pull/1
-
 ---

@@ -181,15 +181,21 @@ tutors:
   rocketchat: https://chat.austincodingacademy.com/direct/ericbarrs-913
 
 scrolling:
-  - name: curriculum
+  - name: Curriculum
+    id: curriculum
     weight: 1
-  - name: form
+  - name: Course Guide
+    id: course-guide
     weight: 2
-  - name: comparison
+  - name: Signup Options
+    id: options
     weight: 3
-  - name: dates
+  - name: Course Dates
+    id: dates
     weight: 4
-  - name: campuses
+  - name: Campuses
+    id: campuses
     weight: 5
-  - name: contact
+  - name: Contact Us
+    id: contact
     weight: 6

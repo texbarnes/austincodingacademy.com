@@ -271,6 +271,41 @@ body, p {
   background: linear-gradient(to right, #21409a, #2d2f77);
 }
 
+.border-blue {
+  border: 2px solid #00b3d1;
+  box-sizing: border-box;
+}
+
+.border-green {
+  border: 2px solid #7fc89a;
+  box-sizing: border-box;
+}
+
+.border-x-none {
+  border-right: none;
+  border-left: none;
+}
+
+.border-y-padding {
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  margin-left: -1px;
+  box-sizing: border-box;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.scrolling-nav {
+  right: 1rem;
+  top: 45%;
+}
+
 /* CUSTOM BUTTONS */
 
 /* no longer used, but may be used again */
@@ -303,10 +338,6 @@ body, p {
   left: -1px;
 }
 
-.mw-1000 {
-  max-width: 1000px;
-}
-
 .mw-850 {
   max-width: 850px;
 }
@@ -315,8 +346,12 @@ body, p {
   max-width: 600px;
 }
 
-.mw-22 {
+.mw-22r {
   max-width: 22rem;
+}
+
+.mw-10r {
+  min-width: 10rem;
 }
 
 .img-logo {

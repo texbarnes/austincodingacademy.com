@@ -9,14 +9,14 @@ location: Austin, TX
 blurb: 'Life long geek and lover of technology. When I am not playing board games I am online pursuing my many interests. Got into coding at a more fundemental level with C++, but am loving higher level laungauges like Javascript and Python. Broad experience base with web (full stack), mostly in the MERN stack. '
 
 skills:
-  - Node.js
+  - JavaScript
   - React
   - Redux
   - Express.js
   - React Native
   - HTML
   - CSS
-  - JavaScript
+  - Node.js
   - jQuery
   - Python
   - Testing
@@ -70,5 +70,11 @@ education:
     logo: https://upload.wikimedia.org/wikipedia/en/8/8b/University_of_Texas_at_San_Antonio_seal.svg
 
 projects:
-
+  - name: Nuclear Display Tool
+    desc: Hook nuclear data into visualization tools like d3 documents for science communicators 
+    url: https://github.com/Christopher-Willis/Nuclear-Display
+    
+  - name: Snack Share
+    desc: Market place for cottege food sales
+    url: https://www.snack-share.com/
 ---

@@ -10,13 +10,13 @@ blurb: 'Life long geek and lover of technology. When I am not playing board game
 
 skills:
   - JavaScript
+  - Node.js
   - React
   - Redux
   - Express.js
   - React Native
   - HTML
   - CSS
-  - Node.js
   - jQuery
   - Python
   - Testing

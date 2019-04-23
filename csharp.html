@@ -16,7 +16,7 @@ features:
     text: Tempor porttitor massa. Nulla ligula nibh, ultricies sit amet urna posuere, viverra ultricies est. Integer pellentesque ultricies aliquam.
   - heading: Lorem, ipsum.
     img_src: calendar.png
-    text: Voluptate eos quisquam pariatur assumenda ipsa accusamus rerum perferendis ut?
+    text: Voluptate eos quisquam pariatur assumenda ipsa accusamus rerum perferendis ut? Sit amet consectetur adipisicing elit.
   - heading: Lorem ipsum dolor sit.
     img_src: calendar.png
     text: Mauris a ullamcorper arcu, ut dignissim ante. Vestibulum fringilla eget augue vel commodo. Sed nisl justo, semper quis justo efficitur.
@@ -77,7 +77,7 @@ features:
     </p>
     <form class="d-flex justify-content-center align-items-center"
       target="_top"
-      action-xhr="{{site.form_url}}/{{site.hubspot_portal_id}}/###"
+      action-xhr="{{site.form_url}}/{{site.hubspot_portal_id}}/b8fb52b4-28de-4133-920b-7f587724bb3d"
       method="POST"
     >
       <div class="form-container mw-850 px-5 px-lg-0">
@@ -92,10 +92,23 @@ features:
           <div class="col-sm-6">
             <div class="form-group">
               <label for="first-name" class="form-label">
-                Name <span class="text-red">*</span>
+                First Name <span class="text-red">*</span>
               </label>
 
-              <input id="first-name" type="text" class="form-control" name="firstname" placeholder="Name" aria-label="Your name"
+              <input id="first-name" type="text" class="form-control" name="firstname" placeholder="First name" aria-label="Your name"
+                required data-msg="Please enter your name." data-error-class="u-has-error" data-success-class="u-has-success" />
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <!-- Input -->
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="first-name" class="form-label">
+                Last Name <span class="text-red">*</span>
+              </label>
+
+              <input id="first-name" type="text" class="form-control" name="lastname" placeholder="First name" aria-label="Your name"
                 required data-msg="Please enter your name." data-error-class="u-has-error" data-success-class="u-has-success" />
             </div>
           </div>
@@ -115,12 +128,6 @@ features:
           <!-- End Input -->
 
           <!-- Input -->
-          <div class="col-sm-6 d-flex flex-column justify-content-end">
-            {% include referral-question.html %}
-          </div>
-          <!-- End Input -->
-
-          <!-- Input -->
           <div class="col-sm-6 d-flex flex-column justify-content-end form-group">
             <label class="form-label" for="best-describes">Which of these best describes you? <span class="text-red">*</span></label>
             <select id="best-describes" name="which_of_these_best_describes_you_" class="form-control" required>
@@ -136,6 +143,29 @@ features:
           <!-- End Input -->
 
           <!-- Input -->
+          <div class="js-form-message mb-4 col-sm-12">
+          <label for="message" class="form-label">
+            Message <span class="text-red">*</span>
+          </label>
+
+          <div class="input-group">
+            <textarea
+              id="message"
+              class="form-control"
+              rows="4"
+              name="message"
+              placeholder="Enter your questions or comments here"
+              aria-label="Enter your questions or comments here"
+              required
+              data-msg="Please enter a message."
+              data-error-class="u-has-error"
+              data-success-class="u-has-success"
+            ></textarea>
+          </div>
+        </div>
+        <!-- End Input -->
+
+          <!-- Input -->
           <div class="col-12 d-flex align-items-end justify-content-center form-group">
             <button type="submit" class="btn btn-round btn-sm-block text-white bg-purple hover-white">
               Submit
@@ -146,12 +176,12 @@ features:
             {% include data-agreement.html %}
           </div>
         </div>
-      </div>
-      <div class="text-center">
-        <div submit-error>
-          <template type="amp-mustache">
-            <p class="text-red">There was an error with your request. Please try again.</p>
-          </template>
+        <div class="text-center">
+          <div submit-error>
+            <template type="amp-mustache">
+              <p class="text-red">There was an error with your request. Please try again.</p>
+            </template>
+          </div>
         </div>
       </div>
     </form>

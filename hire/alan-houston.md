@@ -1,12 +1,12 @@
 ---
 layout: resume #don't touch
-categories: [ graduation ] # don't touch
+categories: [ graduation, hire ] # don't touch
 
 fullname: Alan Houston
 jobtitle: Full Stack Web Developer
 
 location: Austin, TX
-blurb: "I pride myself on my communication skills, work well with others, and have proven multitasking and organizational skills. I am detail-oriented, results driven, and now a full stack web developer!"
+blurb: "I am a full stack developer who prides myself on my communication skills, multitasking and organizational proficiency. I love learning and enjoy keeping myself and my peers focused, motivated, and in good spirits!"
 
 skills:
   - JavaScript
@@ -28,8 +28,8 @@ skills:
 github: https://github.com/alanhouston
 linkedin: https://www.linkedin.com/in/alanhouston
 
-email: alanghouston@gmail.com
-website:
+email: alanhouston5000@gmail.com
+website: https://alanhouston.dev
 workplace:
 phone: (512) 993-6800
 
@@ -64,6 +64,6 @@ education:
 projects:
   - name: Armstrong Program
     desc: Workout tracker for the Armstrong Pull-up Program
-    url:
+    url: https://armstrongprogram.herokuapp.com 
 
 ---

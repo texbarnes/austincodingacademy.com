@@ -72,7 +72,7 @@ header:
       url: "/financing"
     - weight: 2
       title: Scholarships
-      url: "/scholarships"
+      url: "#"
 - weight: 10
   title: Apply
   url: "/apply"
@@ -192,15 +192,6 @@ scrolling:
   - name: Course Guide
     id: course-guide
     weight: 2
-  - name: Signup Options
-    id: options
-    weight: 3
-  - name: Course Dates
-    id: dates
-    weight: 4
-  - name: Campuses
-    id: campuses
-    weight: 5
   - name: Contact Us
     id: contact
     weight: 6

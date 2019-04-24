@@ -134,17 +134,19 @@
                 </a>
               {% else %}
                 <li class="nav-item u-header__nav-item">
-                  <a class="nav-link u-header__nav-link">
+                  <a href="#" class="nav-link u-header__nav-link">
                     <span class="text-white hover-white">
                       {{ item.title }} <i class="fas fa-caret-down"></i>
                       </span>
                   </a>
-                  <ul class="d-none nav-dropdown position-absolute list-unstyled">
+                  <ul class="d-none nav-dropdown position-absolute list-unstyled rounded p-2">
                     {% if item.links %}
                       {% for link in item.links %}
-                        <li class="position-relative py-0 pl-3">
-                          <a class="text-white nav-link p-1" href="{{ link.url }}">
-                            <span class="text-white hover-white display-small">
+                        <!-- htmllint preset="none" -->
+                        <li class="position-relative p-0{% unless link == item.links.last %} mb-2{% endunless %}">
+                        <!-- htmllint preset="$previous" -->
+                          <a class="p-0" href="{{ link.url }}">
+                            <span class="text-blue hover-white">
                               {{ link.title }}
                             </span>
                           </a>
@@ -152,14 +154,16 @@
                       {% endfor %}
                     {% else %}
                       {% for section in item.sections %}
-                        <li class="position-relative py-0 pl-3">
-                          <h5 class="text-white display-8 font-weight-bold p-1 m-0">
+                        <!-- htmllint preset="none" -->
+                        <li class="position-relative p-0{% unless section == item.sections.last %} mb-2{% endunless %}">
+                        <!-- htmllint preset="$previous" -->
+                          <h5 class="text-white border-bottom display-8 p-0">
                             {{ section.heading }}
                           </h5>
                           <ul class="list-unstyled">
                             {% for item in section.pages %}
-                              <li>
-                                <a href="{{item.url}}" class="text-white display-small">
+                              <li class="p-0">
+                                <a href="{{item.url}}" class="text-blue hover-white">
                                   {{item.title}}
                                 </a>
                               </li>

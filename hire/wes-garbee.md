@@ -11,6 +11,9 @@ blurb: "An avid developer with a passion for connecting with others and learning
 skills:
   - C#
   - .NET
+
+skills:
+  - C#/.Net
   - HTML
   - CSS
   - JavaScript
@@ -37,7 +40,6 @@ phone: (512) 630-6381
 
 workexperience:
   - company: ePlus Technology
-    logo: https://www.eplus.com/images/default-source/default-album/blog_logo.gif?sfvrsn=b0974bb1_0
     dates: July 2011 - Present
     title: Enterprise ISR
     location: Austin, TX

@@ -77,9 +77,11 @@
         </button>
       </div>
       <!-- End Input -->
+      {% if page.categories contains 'landing' %}
       <div class="col-12 d-flex justify-content-center">
-        {% include data-agreement.html class="text-white link-underlined" %}
+        {% include data-agreement.html %}
       </div>
+      {% endif %}
     </div>
   </div>
 

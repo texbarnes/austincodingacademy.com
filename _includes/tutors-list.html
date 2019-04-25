@@ -1,4 +1,4 @@
-<div class="container mt-90 py-5">
+<div class="container mt-90 pt-1 pb-5">
   {% if page.permalink == "/tutoring/" %}
     <amp-lightbox
       id="apply-now-lightbox"
@@ -193,7 +193,7 @@
 
             <!-- Contact -->
             <div class="mt-2">
-              {% unless page.permalink == "/tutors/" %}
+              {% if page.permalink == "/tutors/" %}
                 <a href="{{tutor.rocketchat}}" rel="noopener" target="_blank">
                   <i class="display-7 fab fa-rocketchat" aria-hidden="true"></i>
                   <span class="sr-only">Message on RocketChat</span>
@@ -211,7 +211,7 @@
                   <i class="display-7 fas fa-envelope" aria-hidden="true"></i>
                   <span class="sr-only">Link to email</span>
                 </a>
-              {% endunless %}
+              {% endif %}
             </div>
             <!-- End Contact -->
           </div>

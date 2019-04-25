@@ -13,7 +13,7 @@ social:
 
 footer:
 - weight: 1
-  title: Campus Manager
+  title: Student Portal
   url: https://campus.austincodingacademy.com
 - weight: 2
   title: Hack Overflow
@@ -33,16 +33,10 @@ footer:
 
 header:
 - weight: 1
-  title: Courses
-  sections:
-    - heading: Full-stack
-      pages:
-        - title: JavaScript
-          url: "/javascript"
-    - heading: Electives
-      pages:
-        - title: C# .NET
-          url: "/csharp"
+  title: Curriculum
+  links:
+    - title: Full-stack Web Development
+      url: /javascript
 - weight: 2
   title: About Us
   links:
@@ -93,7 +87,7 @@ tutors:
   - Web 101
   - JS 211
   - JS 311
-  email: charles@austincodingacademy.com
+  email: charcole@protonmail.com
   calendar: https://acaappointment.as.me/?calendarID=2850726
   virtual: https://meet.google.com/vki-mtiq-auh
   rocketchat: https://chat.austincodingacademy.com/direct/charlescole

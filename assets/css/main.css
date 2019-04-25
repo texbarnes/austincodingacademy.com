@@ -367,6 +367,10 @@ body, p {
   min-width: 10rem;
 }
 
+.navbar-logo {
+  width: 66px;
+}
+
 .img-logo {
   width: 4rem;
 }
@@ -387,27 +391,26 @@ body, p {
 
 /* Position Dropdown */
 .nav-dropdown {
-  top: 1rem;
-  /* the height of the main nav */
-  background-color: rgba(0, 0, 0, 0.8);
+  top: 3rem;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* Display Dropdowns on Hover */
-#nav-bar ul li ul {
+/* Hide Dropdowns */
+#nav-bar>ul>li>ul {
   display: none;
 }
 
-#nav-bar ul li:hover>ul {
+/* Display Dropdowns on Hover */
+#nav-bar>ul>li:hover>ul {
   display: inherit;
 }
 
 /* First Tier Dropdown */
 nav ul ul li {
-  width: 140px;
+  min-width: 7rem;
+  width: auto;
   float: none;
   display: list-item;
-  /* background-color: rgba(0, 0, 0, 0.8); */
-  padding: 3px 0 3px 10px;
 }
 
 /* INDEX */

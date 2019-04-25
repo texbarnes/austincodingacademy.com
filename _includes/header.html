@@ -13,7 +13,7 @@
   side="right">
   {% for item in site.menus.header %}
     <div
-      class="mt-5 text-left"
+      class="mt-4"
       on="tap:sidebar.open"
       role="dialog"
       tabindex="-1"
@@ -27,41 +27,41 @@
             </span>
         </a>
       {% else %}
-        <div class="mx-5 text-white btn btn-round btn-outline">
-          <amp-accordion disable-session-states>
-            <section>
-              <h5>
-                {{item.title}}
-              </h5>
-              <ul class="list-unstyled">
-                {% if item.links %}
-                  {% for link in item.links %}
-                    <li>
-                      <a href="{{link.url}}">
-                        {{link.title}}
-                      </a>
-                    </li>
-                  {% endfor %}
-                {% else %}
-                  {% for section in item.sections %}
-                    <li>
+        <amp-accordion disable-session-states class="mx-5">
+          <section>
+            <h5 class="text-center text-white hover-white border btn rounded bg-dark py-1 mb-2" tabindex="0">
+              {{item.title}}
+            </h5>
+            <ul class="list-unstyled text-left pl-3">
+              {% if item.links %}
+                {% for link in item.links %}
+                  <li>
+                    <a href="{{link.url}}" class="text-blue hover-white">
+                      {{link.title}}
+                    </a>
+                  </li>
+                {% endfor %}
+              {% else %}
+                {% for section in item.sections %}
+                  <li>
+                    <span class="border-bottom text-white">
                       {{section.heading}}
-                      <ul class="list-unstyled">
-                        {% for page in section.pages %}
-                          <li>
-                            <a href="{{page.url}}">
-                              {{page.title}}
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    </li>
-                  {% endfor %}
-                {% endif %}
-              </ul>
-            </section>
-          </amp-accordion>
-        </div>
+                    </span>
+                    <ul class="list-unstyled">
+                      {% for page in section.pages %}
+                        <li>
+                          <a href="{{page.url}}" class="text-blue hover-white">
+                            {{page.title}}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% endfor %}
+              {% endif %}
+            </ul>
+          </section>
+        </amp-accordion>
       {% endif %}
     </div>
   {% endfor %}
@@ -88,10 +88,9 @@
       >
         <!-- Logo -->
         <a
-          class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-text-white"
+          class="navbar-logo d-flex"
           href="/"
           aria-label="Logo"
-          style="width:66px; height:66px;"
         >
           <amp-img
             width="66px"
@@ -135,39 +134,43 @@
                 </a>
               {% else %}
                 <li class="nav-item u-header__nav-item">
-                  <a tabindex="0" class="px-2 pt-2 mx-2">
+                  <a tabindex="0" class="p-2 mx-2">
                     <span class="text-white hover-white">
                       {{ item.title }} <i class="fas fa-caret-down"></i>
                       </span>
                   </a>
-                  <ul class="nav-dropdown position-absolute list-unstyled rounded p-2">
+                  <ul class="nav-dropdown position-absolute list-unstyled rounded px-3">
                     {% if item.links %}
                       {% for link in item.links %}
-                        <!-- htmllint preset="none" -->
-                        <li class="position-relative p-0{% unless link == item.links.last %} mb-2{% endunless %}">
-                        <!-- htmllint preset="$previous" -->
-                          <a class="p-0" href="{{ link.url }}">
-                            <span class="text-blue hover-white">
-                              {{ link.title }}
-                            </span>
-                          </a>
-                        </li>
+                        {% if link.url != "#" %}
+                          <!-- htmllint preset="none" -->
+                          <li class="position-relative p-0 my-2">
+                          <!-- htmllint preset="$previous" -->
+                            <a class="p-0" href="{{ link.url }}">
+                              <span class="text-white hover-white">
+                                {{ link.title }}
+                              </span>
+                            </a>
+                          </li>
+                        {% endif %}
                       {% endfor %}
                     {% else %}
                       {% for section in item.sections %}
                         <!-- htmllint preset="none" -->
-                        <li class="position-relative p-0{% unless section == item.sections.last %} mb-2{% endunless %}">
+                        <li class="position-relative p-0 my-2">
                         <!-- htmllint preset="$previous" -->
-                          <h5 class="text-white border-bottom display-8 p-0">
-                            {{ section.heading }}
+                          <h5 class="small text-yellow border-bottom mb-2 p-0">
+                            {{ section.heading | upcase }}
                           </h5>
                           <ul class="list-unstyled">
                             {% for item in section.pages %}
-                              <li class="p-0">
-                                <a href="{{item.url}}" class="text-blue hover-white">
-                                  {{item.title}}
-                                </a>
-                              </li>
+                              {% if item.url != "#" %}
+                                <li class="p-0">
+                                  <a href="{{item.url}}" class="text-white hover-white">
+                                    {{item.title}}
+                                  </a>
+                                </li>
+                              {% endif %}
                             {% endfor %}
                           </ul>
                         </li>

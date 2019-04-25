@@ -61,8 +61,5 @@
         "_includes/css.html"
       ]
     }
-  },
-  "dependencies": {
-    "pa11y-ci": "^2.2.0"
   }
 }

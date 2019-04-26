@@ -36,7 +36,7 @@ header:
   title: Courses
   links:
     - title: Full-stack Web Development
-      url: /javascript
+      url: /web-development
 - weight: 2
   title: About Us
   links:

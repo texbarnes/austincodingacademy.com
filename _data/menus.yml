@@ -13,8 +13,8 @@ social:
 
 footer:
 - weight: 1
-  title: Student Portal
-  url: https://campus.austincodingacademy.com
+  title: C# .NET
+  url: /csharp
 - weight: 2
   title: Hack Overflow
   url: https://austincodingacademy.com/forum
@@ -33,7 +33,7 @@ footer:
 
 header:
 - weight: 1
-  title: Curriculum
+  title: Courses
   links:
     - title: Full-stack Web Development
       url: /javascript
@@ -67,6 +67,9 @@ header:
     - weight: 2
       title: Scholarships
       url: "#"
+- weight: 4
+  title: Student Portal
+  url: https://campus.austincodingacademy.com
 - weight: 10
   title: Apply
   url: "/apply"

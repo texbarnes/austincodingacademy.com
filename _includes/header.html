@@ -132,7 +132,7 @@
                     {{ item.title }}
                     </span>
                 </a>
-              {% else %}
+              {% elsif item.links %}
                 <li class="nav-item u-header__nav-item">
                   <a tabindex="0" class="p-2 mx-2">
                     <span class="text-white hover-white">
@@ -140,43 +140,28 @@
                       </span>
                   </a>
                   <ul class="nav-dropdown position-absolute list-unstyled rounded px-3">
-                    {% if item.links %}
-                      {% for link in item.links %}
-                        {% if link.url != "#" %}
-                          <!-- htmllint preset="none" -->
-                          <li class="position-relative p-0 my-2">
-                          <!-- htmllint preset="$previous" -->
-                            <a class="p-0" href="{{ link.url }}">
-                              <span class="text-white hover-white">
-                                {{ link.title }}
-                              </span>
-                            </a>
-                          </li>
-                        {% endif %}
-                      {% endfor %}
-                    {% else %}
-                      {% for section in item.sections %}
+                    {% for link in item.links %}
+                      {% if link.url != "#" %}
                         <!-- htmllint preset="none" -->
                         <li class="position-relative p-0 my-2">
                         <!-- htmllint preset="$previous" -->
-                          <h5 class="small text-yellow border-bottom mb-2 p-0">
-                            {{ section.heading | upcase }}
-                          </h5>
-                          <ul class="list-unstyled">
-                            {% for item in section.pages %}
-                              {% if item.url != "#" %}
-                                <li class="p-0">
-                                  <a href="{{item.url}}" class="text-white hover-white">
-                                    {{item.title}}
-                                  </a>
-                                </li>
-                              {% endif %}
-                            {% endfor %}
-                          </ul>
+                          <a class="p-0" href="{{ link.url }}">
+                            <span class="text-white hover-white">
+                              {{ link.title }}
+                            </span>
+                          </a>
                         </li>
-                      {% endfor %}
-                    {% endif %}
+                      {% endif %}
+                    {% endfor %}
                   </ul>
+                </li>
+              {% else %}
+                <li class="nav-item u-header__nav-item">
+                  <a href="{{item.url}}" tabindex="0" class="p-2 mx-2">
+                    <span class="text-white hover-white">
+                      {{ item.title }}
+                    </span>
+                  </a>
                 </li>
               {% endif %}
             {% endfor %}

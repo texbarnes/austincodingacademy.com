@@ -232,7 +232,7 @@ body, p {
 /* HERO IMAGES */
 
 .hero {
-  min-height: 95vh;
+  height: 100vh;
   background-position: 0 -1px;
   background-repeat: no-repeat;
   background-size: cover;

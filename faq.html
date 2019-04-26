@@ -9,11 +9,12 @@ categories:
   general:
     title: Frequently Asked Questions
     faqs:
-    - question: I’m an employer looking to hire some developers, how do I get in touch
-        with you?
-      answer: Pretty soon, we’ll have a “Hire a Grad” page with profile links to our
-        graduates, but for now the best way to get in touch is to fill out our <a
-        href="/contact">Contact Form</a> &#8208; we try to respond as quickly as possible!
+    - question: I’m an employer looking to hire some developers, how do I get in touch with you?
+      answer: Check out our <a href="/hire/">Hire a Graduate</a>
+        page with profile links to our job-ready graduates, where you can contact potential
+        applicants directly. You can also directly contact our
+        <a href="mailto:dan@austincodingacademy.com">Director of Placement &amp; Partnerships</a>
+        for more information.
     - question: Are your classes in-person only?
       answer: Right now, our classes are in-person only. If you have special circumstances,
         we may be able to admit you into our classes remotely.
@@ -158,13 +159,13 @@ categories:
 <div class="container mt-90 py-5">
   {% for category in page.categories %}
     <div class="my-10">
-      <h2 class="font-family-alt mb-6 text-center display-4">
+      <h2 class="font-family-alt mb-6 text-center display-5">
         {{category[1].title}}
       </h2>
       <amp-accordion disable-session-states>
         {% for faq in category[1].faqs %}
           <section class="mb-3">
-            <h4 class="bg-light mb-0 px-2 p-1 rounded-top">
+            <h4 class="display-7 bg-light mb-0 px-2 p-1 rounded-top">
               {{faq.question}}
             </h4>
             <p class="text-default px-2 py-1 border border-top-0 rounded-bottom">
@@ -176,7 +177,7 @@ categories:
     </div>
   {% endfor %}
   <section class="my-10">
-    <h2 class="font-family-alt font-weight-bold text-center display-4 mb-5">
+    <h2 class="font-family-alt font-weight-bold text-center display-5 mb-5">
       Still Have Questions?
     </h2>
     <div class="d-flex flex-column justify-content-center">

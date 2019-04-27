@@ -55,7 +55,7 @@ education:
     logo: https://pbs.twimg.com/profile_images/897474273501003776/jCs6fCxN_400x400.jpg
 
 projects:
-  - name: Redux Action Practice
-    desc: Fully functional app
-    url: https://github.com/AustinCodingAcademy/redux-action-practice/pull/1
+  - name: 
+    desc: 
+    url: 
 ---

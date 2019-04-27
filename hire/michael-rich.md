@@ -1,6 +1,6 @@
 ---
 layout: resume #don't touch
-categories: [Graduation, hire] # don't touch
+categories: [hire, graduation] # don't touch
 
 fullname: Michael Rich
 jobtitle: Courier Driver

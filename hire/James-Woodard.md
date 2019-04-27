@@ -43,5 +43,5 @@ education:
 projects:
   - name: NesCollector
     desc: A web app to help you organize youe NES collection
-    url: https://nescollector.azurewebsites.nets
+    url: https://nescollector.azurewebsites.net
 ---

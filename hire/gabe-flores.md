@@ -54,8 +54,8 @@ education:
     logo: https://austincodingacademy.com/
 
 projects:
-  - name:Smart Shop
-    desc:grocery shopping list assistant
-    url:https://jflores353.github.io/smart-shop-app/
+  - name: Smart Shop
+    desc: grocery shopping list assistant
+    url: https://jflores353.github.io/smart-shop-app/
 
 ---

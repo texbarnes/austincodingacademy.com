@@ -1,6 +1,6 @@
 ---
 layout: resume #don't touch
-categories: [ hire ] # don't touch
+categories: [ hire, graduate ] # don't touch
 
 fullname: Christopher Willis
 jobtitle: Web Developer, SEO/SEM Assistant

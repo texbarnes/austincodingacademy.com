@@ -35,5 +35,5 @@ education:
 projects:
   - name: Review My Product
     desc: 
-    url: reviewmyproduct.azurewebsites.net
+    url: https://reviewmyproduct.azurewebsites.net
 ---

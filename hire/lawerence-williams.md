@@ -1,6 +1,6 @@
 ---
 layout: resume #don't touch
-categories: [ hire ] # don't touch
+categories: [ hire, graduate ] # don't touch
 
 fullname: Lawerence Williams
 jobtitle: Full Stack Web Developer
@@ -24,7 +24,6 @@ skills:
   - REST APIs
   - Data Visualization
 
-
 github: https://github.com/uhuru3
 linkedin: https://www.linkedin.com/in/lawerence-williams/
 
@@ -43,7 +42,6 @@ workexperience:
     dates: April 2010 - Current
     title: C.E.O. President
     location: Austin, TX
-
 
 education:
   - name: Austin Coding Academy

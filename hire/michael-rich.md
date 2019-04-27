@@ -1,6 +1,6 @@
 ---
 layout: resume #don't touch
-categories: [hire, graduation] # don't touch
+categories: [ hire, graduation ] # don't touch
 
 fullname: Michael Rich
 jobtitle: Courier Driver
@@ -9,7 +9,7 @@ location: San Antonio, TX
 blurb: "Up and coming C#/Asp.net developer with a passion for problem solving and learning new skills"
 
 skills:
-  - C# .Net
+  - C# .NET
   - HTML
   - CSS
   - JavaScript

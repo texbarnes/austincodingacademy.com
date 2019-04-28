@@ -55,7 +55,7 @@ education:
     logo: https://pbs.twimg.com/profile_images/897474273501003776/jCs6fCxN_400x400.jpg
 
 projects:
-  - name: 
-    desc: 
-    url: 
+  - name: All Black Everything
+    desc: ...
+    url: google.com
 ---
